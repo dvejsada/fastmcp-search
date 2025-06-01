@@ -1,0 +1,17 @@
+services:
+  mcp-search:
+    image: georgx22/fastmcp-search:latest
+    container_name: mcp-search
+    restart: always
+    ports:
+      - "4200:4200"
+    environment:
+      SEARXNG_INSTANCE: "http://your.ip:8083/search?"
+      AWS_REGION: eu-central-1
+      AWS_ACCESS_KEY_ID:
+      AWS_SECRET_ACCESS_KEY:
+      RERANK_MODEL_ID: cohere.rerank-v3-5:0
+      SUMMARIZER_MODEL_ID: eu.amazon.nova-lite-v1:0
+      TAVILY_API_KEY:
+
+

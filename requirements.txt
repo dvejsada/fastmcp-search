@@ -1,0 +1,6 @@
+fastmcp
+pydantic
+starlette
+boto3
+botocore
+tavily-python
